@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudut Pandang Kreasi</title>
+    <link rel="shortcut icon" type="image/png" href="foto/icoon.png">
+    <link rel="stylesheet" href="utscss.css">
+    <script src="framelecssjav.js"></script>
+    <style>
+        .center-image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <h2 style="background-color: black"></h2>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('hamburger').addEventListener('click', function() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-text">Frameless Visual</div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+            <li><a href="frameless.html">Home</a></li>
+            <li><a href="contohcss.html">Tentang Kami</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger">☰</div>
+       <div class="sidebar" id="sidebar">
+            <ul>
+            <li><a href="frameless.html">Home</a></li>
+            <li><a href="contohcss.html">Tentang Kami</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+
+            <li class="nav-item">
+                <a href="galeri.html" class="nav-link">Galeri</a>
+                <ul class="dropdown">
+                    <li><a href="subpage1.html">VIDEO</a></li>
+                    <li><a href="subpage2.html">FOTO</a></li>
+                </ul>
+            </li>
+    </nav>
+
+    <section id="home">
+        <h1 style="text-align: center;">Sudut Pandang Kreasi</h1>
+        <h3 style="text-align: center;">"Capturing life’s most meaningful moments with authenticity and timeless artistry."</h3>
+    <div class="center-image">
+        <img src="foto/DSC_0113.jpg" style="height: 500px; width: 1050px;">
+    </div>
+    <p>
+        Sudut Pandang Kreasi
+        <span class="more-content">adalah Jasa mendokumentasikan momen atau menciptakan visual sesuai keinginan klien. Jasa ini mencakup berbagai keperluan, seperti fotografer, videografer dan editor yang melayani banyak kebutuhan klien seperti layanan mendokumentasi pernikahan, fotografi produk untuk promosi, serta fotografi acara acara penting lainnya. Selain itu, jasa videografer bertanggung jawab untuk merekam video berkualitas tinggi sesuai kebutuhan klien. Videografer biasanya menangani proyek seperti dokumentasi acara, pembuatan film pendek, iklan, atau konten kreatif lainnya dengan menggunakan peralatan video yang canggih. Setelah proses pengambilan gambar atau video selesai, peran editor menjadi penting untuk menyempurnakan hasilnya. Editor bertugas mengolah foto atau video dengan perangkat lunak khusus, melakukan koreksi warna, memotong bagian yang tidak diperlukan, serta menambahkan elemen kreatif seperti efek visual atau suara untuk menghasilkan karya yang profesional. Dengan kombinasi fotografer, videografer, dan editor, klien dapat memperoleh dokumentasi yang lengkap dan berkualitas tinggi untuk berbagai kebutuhan.</span>
+    </p>
+        <span class="read-more" id="readMoreBtn">adalah</span>
+    <script>
+        document.getElementById("readMoreBtn").addEventListener("click", function() {
+            const moreContent = document.querySelector(".more-content");
+            if (moreContent.style.display === "none") {
+                moreContent.style.display = "inline";
+                this.textContent = "Read Less";
+            } else {
+                moreContent.style.display = "none";
+                this.textContent = "Adalah";
+            }
+        });
+    </script>
+        <h2 style="text-align: center";>Why should you choose us? </h2>
+        <h5 style="text-align: center";>Terdapat banyak keuntungan jika anda memilih Sudut Pandang Kreasi untuk acara berharga anda</h5>
+    <div class="center-image">
+        <img src="foto/review.jpg" style="height: 500px; width: 1050px;">
+    </div>
+        <h2 style="text-align: center"> Our Services</h2>
+        <h5 style="text-align: center";>Apa saja yang tersedia di Sudut Pandang Kreasi?</h5>
+    <div class="image-button-container">
+        <div class="center-image">
+        <img id="img" src="foto/DSC_0113.jpg" style="height: 250px; width: 525px;">
+    </div>
+    <div class="button-group">
+        <button class="button" onclick="document.getElementById('img').src='foto/1.png'">Wedding & Engagment</button>
+        <button class="button" onclick="document.getElementById('img').src='foto/2BARU.png'">Photoshoot</button>
+        <button class="button" onclick="document.getElementById('img').src='foto/3.png'">Wisuda</button>
+        <button class="button" onclick="document.getElementById('img').src='foto/4.png'">Event</button>
+        <button class="button" onclick="document.getElementById('img').src='foto/5.png'">Interior Design</button>
+    </div>
+    
+    </section>
+
+    <footer>
+            <small>
+                    @Sudut Pandang Kreasi.
+            </small>
+    </footer>
+</body>
+</html>
